@@ -24,6 +24,15 @@ body {
     opacity: 1;
 }
 
+
+.fab.fa-instagram {
+    background-image: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
 .user-info {
     text-align: center;
     margin-bottom: 5px;
@@ -74,7 +83,7 @@ button:hover {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0px 20px;
     margin: 0 100px;
-    background-color: rgba(45, 105, 105, 0.342);
+    background-color: rgba(78, 102, 102, 0.418);
     color: #000000;
     border: solid 2px #03030307;
     border-radius: 10px;
@@ -96,38 +105,38 @@ button:hover {
 
 
 @media screen and (max-width: 600px) {
-    .container {
-        max-width: 90vw;
-        padding: 1rem;
-        border-radius: 2rem;
-        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
-    }
+.container {
+    max-width: 90vw;
+    padding: 1rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
 
-    .user-info img {
-        width: 8rem;
-        height: 8rem;
-    }
+.user-info img {
+    width: 8rem;
+    height: 8rem;
+}
 
-    .buttons button {
-        margin-top: 2rem;
-    }
+.buttons button {
+    margin-top: 2rem;
+}
 
-    button {
-        padding: 1rem 1.5rem;
-        margin: 0 1rem;
-    }
+button {
+    padding: 1rem 1.5rem;
+    margin: 0 1rem;
+}
 
-    button i {
-        font-size: 1.5rem;
-    }
+button i {
+    font-size: 1.5rem;
+}
 
-    .containerE {
-        padding: 0.5rem 1rem;
-        margin: 0.5rem;
-        border-radius: 1rem;
-    }
+.containerE {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+}
 
-    .containerE p {
-        letter-spacing: 0rem;
-    }
+.containerE p {
+    letter-spacing: 0rem;
+}
 }
