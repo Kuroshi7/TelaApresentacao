@@ -10,3 +10,7 @@ function redirecionarlin() {
 function redirecionargit() {
     window.location.href = "https://github.com/Kuroshi7?tab=repositories";
 }
+
+window.addEventListener('load', function() {
+    document.querySelector('.container').classList.add('carregado');
+});

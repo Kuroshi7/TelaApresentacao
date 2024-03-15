@@ -6,15 +6,22 @@ body {
     background-size: 100vw 100vh;
 }
 
+
 .container {
     max-width: 40vw;
     margin: 10px auto;
     padding: 100px 20px 20px;
     background-color: rgba(203, 224, 228, 0.3);
     border-radius: 50px;
-    box-shadow: 0 0 200px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 200px rgba(0, 0, 0, 0.7);
     text-align: center;
     position: relative;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.container.carregado{
+    opacity: 1;
 }
 
 .user-info {
@@ -30,6 +37,7 @@ body {
     margin-bottom: 10px;
     box-shadow: 0 0 40px;
     object-fit: cover;
+    border: 5px solid #ffffff00;
 }
 
 .buttons {
@@ -44,7 +52,7 @@ body {
 button {
     padding: 20px 20px;
     margin: 0 30px;
-    background-color: #007bff;
+    background-color: #007bffa1;
     color: #fff;
     border: none;
     border-radius: 10px;
@@ -64,11 +72,11 @@ button:hover {
 .containerE {
     font-size: larger;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 10px 20px;
-    margin: 0 10px;
-    background-color: rgba(45, 105, 105, 0.164);
+    padding: 0px 20px;
+    margin: 0 100px;
+    background-color: rgba(45, 105, 105, 0.342);
     color: #000000;
-    border: none;
+    border: solid 2px #03030307;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 0 0 rgba(0, 0, 0, 0);
@@ -80,10 +88,12 @@ button:hover {
 }
 
 .containerE p {
-    letter-spacing: 10px;
+    letter-spacing: 8px;
     width: 100%;
     font-weight: bold;
+    
 }
+
 
 @media screen and (max-width: 600px) {
     .container {
