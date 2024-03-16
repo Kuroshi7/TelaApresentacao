@@ -15,6 +15,11 @@ window.addEventListener('load', function() {
     document.querySelector('.container').classList.add('carregado');
 });
 
+function gerarNumeroSorte() {
+    var numeroSorte = Math.floor(Math.random() * 100) + 1;
+    document.getElementById('numeroSorte').innerText = "Número da sorte: " + numeroSorte;
+}
+
 function toggleInfo() {
     var infoDiv = document.getElementById('info');
     if (infoDiv.style.display === 'none') {
