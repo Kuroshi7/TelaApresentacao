@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Tela de Apresentação</title>
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Apresentação</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-<div class="container">
-    
-    <div class="user-info">
-        <img src="./image/profile.jpg" alt="User Image">
-        <h2><a href="https://www.instagram.com/victor.soffi/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a> victor soffi</h2>
-        <div class="containerE">
-        <p>victorsoffi@gmail.com</p>
+    <div class="container">
+        <div class="user-info">
+            <img src="./image/profile.jpg" alt="User Image">
+            <h2><a href="https://www.instagram.com/victor.soffi/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>victor</h2>
+            <div class="containerE" id="info-container">
+                <button class="info-button" onclick="toggleInfo()">NOME / E-MAIL</button>
+                <div id="info" style="display: none;">
+                    <p>Nome: Victor Soffi Bonfante</p>
+                    <p>Email: victorsoffi@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button onclick="redirecionargit()"><i class="fab fa-github"></i></button>
+            <button onclick="redirecionarlin()"><i class="fab fa-linkedin"></i></button>
+            <br>
+            <button onclick="mostrarMensagem()">Recarregar</button>
         </div>
     </div>
-    <div class="buttons">
-        <button onclick="redirecionargit()"><i class="fab fa-github"></i></button>
-        <button onclick="redirecionarlin()"><i class="fab fa-linkedin"></i></button>
-        <br>
-        <button onclick="mostrarMensagem()">Recarregar</button>
-    </div>
-</div>
-<script src="scripts.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
