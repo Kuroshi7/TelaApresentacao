@@ -1,6 +1,6 @@
 function mostrarMensagem() {
-    alert("Deseja recarregar a pagina?");
-    location.reload ();
+    alert("Deseja recarregar a página?");
+    location.reload();
 }
 
 function redirecionarlin() {
@@ -11,9 +11,9 @@ function redirecionargit() {
     window.location.href = "https://github.com/Kuroshi7?tab=repositories";
 }
 
-window.addEventListener('load', function() {
+function carregarPagina() {
     document.querySelector('.container').classList.add('carregado');
-});
+}
 
 function gerarNumeroSorte() {
     var numeroSorte = Math.floor(Math.random() * 100) + 1;
@@ -22,9 +22,27 @@ function gerarNumeroSorte() {
 
 function toggleInfo() {
     var infoDiv = document.getElementById('info');
-    if (infoDiv.style.display === 'none') {
-        infoDiv.style.display = 'block';
-    } else {
-        infoDiv.style.display ='none';
+    infoDiv.style.display = infoDiv.style.display === 'none' ? 'block' : 'none';
 }
+
+function fadeInProjects() {
+    var projects = document.querySelectorAll('.project');
+    var windowHeight = window.innerHeight;
+
+    projects.forEach(function(project) {
+        var positionFromTop = project.getBoundingClientRect().top;
+
+        if (positionFromTop - windowHeight <= 0) {
+            project.classList.add('visible');
+        } else {
+            project.classList.remove('visible');
+        }
+    });
 }
+
+window.addEventListener('load', function() {
+    carregarPagina();
+    fadeInProjects();
+});
+
+window.addEventListener('scroll', fadeInProjects);

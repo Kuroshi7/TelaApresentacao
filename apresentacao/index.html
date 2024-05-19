@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Apresentação</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 <body>
     <div class="container">
@@ -18,6 +20,17 @@
                     <p>Email: victorsoffi@gmail.com</p>
                 </div>
             </div>
+            <div class="descricao">
+                <p>
+                    Estudante de programação, 
+                    possuo maior afinidade em desenvolvimento front-end
+                    em JavaScript.<br> 
+                    Tenho conhecimentos sobre UX/UI e interesses na área de teste de software.<br>
+                    Possuo também um breve contato na parte de desenvolvimento back-end com SpringBoot.<br>
+                    Além disso, sou músico por paixão e hobby, e faço parte de uma banda autoral.
+                </p>
+            </div>
+            
         </div>
         <div class="buttons">
             <button onclick="redirecionargit()"><i class="fab fa-github"></i></button>
@@ -25,10 +38,91 @@
             <br>
             <button onclick="gerarNumeroSorte()">Numero da sorte</button>
             <p id="numeroSorte"></p>
-            <br>
-            <button onclick="mostrarMensagem()">Recarregar</button>
         </div>
+    </div>
+
+    <div class="projects-section">
+        <h2>Meus Projetos</h2>
+        <div class="project" id="project1">
+            <h3>Bateria WEB</h3>
+            <p>
+                <h4>Descrição:</h4>
+                A Bateria WEB é um projeto de uma bateria virtual desenvolvida com HTML, CSS e JavaScript.
+                A página simula uma bateria real, onde cada tecla do teclado ou clique na tela reproduz um som de bateria correspondente.
+                É uma aplicação interativa para explorar sons de bateria de forma virtual.
+                <br><br>
+                <h4>Recursos:</h4>
+                <ul>
+                    <li>Interface interativa com imagens representativas de cada parte da bateria.</li>
+                    <li>Reprodução de sons ao clicar nos elementos da interface ou ao pressionar teclas específicas no teclado.</li>
+                    
+                </ul>
+                <h4>Tecnologias utilizadas:</h4>
+                <ul class="icons">
+                    <li><i class="fab fa-html5"></i></li>
+                    <li><i class="fab fa-css3-alt"></i></li>
+                    <li><i class="fab fa-js"></i></li>
+                </ul>
+            </p>
+            <a href="https://github.com/Kuroshi7/Drums" target="_blank">Veja no GitHub</a>
         </div>
+        <div class="project" id="project2">
+            <h3>Blog de Tatuagem</h3>
+            <p>
+                <h4>Descrição:</h4>
+                O Blog de Tatuagem é uma plataforma online dedicada à arte da tatuagem e ilustração,
+                proporcionando um espaço para artistas e entusiastas compartilharem ideias, inspirações e experiências.
+                O site oferece uma plataforma para publicação de trabalhos.
+                É um ambiente interativo e envolvente para a comunidade tatuadora, e ilustradores.</p>
+            <h4>Recursos:</h4>
+                <ul>
+                    <li>Função de login/cadastro</li>
+                    <li>Layout intuitivo e atraente, com navegação fácil e acessível.</li>
+                    <li>Publicação de posts e imagens.</li>
+                    <li>Função de publicação com uso de tags</li>
+                    <li>Filtragem de publicações por tags</li>
+                </ul>
+            <h4>Tecnologias utilizadas:</h4>
+            <p>
+                <ul class="icons">
+                    <li><i class="fab fa-html5"></i></li>
+                    <li><i class="fab fa-css3-alt"></i></li>
+                    <li><i class="fab fa-js"></i></li>
+                    <li><i class="fab fa-react"></i></li>
+                    <li><i class="fas fa-database"></i></li>
+                </ul>
+            </p>
+            <a href="https://github.com/Kuroshi7/exhibitapp" target="_blank">Veja no GitHub</a>
+        </div>
+        <div class="project" id="project1">
+            <h3>Aplicativo bancario em Java</h3>
+            <p>
+                <h4>Descrição:</h4>
+                O "ConnectBank" é um sistema bancário online desenvolvido em Spring Boot e Base de Data em FireBase,
+                que permite aos usuários realizar operações bancárias básicas,
+                como depósitos, saques e transferências.
+                O sistema é projetado para oferecer uma experiência simples e segura aos clientes,
+                permitindo que eles acessem suas contas e realizem transações de forma conveniente.
+                <br><br>
+                <h4>Recursos:</h4>
+                <ul>
+                    <li>Funcionalidades completas de um sistema bancário, incluindo depósitos, saques e transferências.</li>
+                    <li>Integração com o Firebase para autenticação de usuários e armazenamento de dados.</li>
+                    <li>Implementação de segurança com tokens de sessão para proteger as transações.</li>
+                </ul>
+                <h4>Tecnologias utilizadas:</h4>
+                <ul class="icons">
+                    <li><i class="fab fa-java"></i></li>
+                    <li><i class="fab fa-html5"></i></li>
+                    <li><i class="fab fa-css3-alt"></i></li>
+                    <li><i class="fab fa-js"></i></li>
+                    <li><i class="fas fa-database"></i></li>
+                </ul>
+            </p>
+            <a href="https://github.com/Kuroshi7/Javabank" target="_blank">Veja no GitHub</a>
+        </div>
+    </div>
+    
     <script src="scripts.js"></script>
 </body>
 </html>

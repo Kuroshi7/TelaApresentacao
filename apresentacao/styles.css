@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-image: linear-gradient(to bottom, #466e77, #8bc29c);
-    background-size: 200vw 200vh;
+    background-size: 300vw 300vh;
     word-wrap: break-word;
 }
 
@@ -117,6 +117,71 @@ button:hover {
     width: 100%;
     font-weight: bold;
 }
+.descricao {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.219);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+
+.projects-section {
+    margin: 50px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.project {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(203, 224, 228, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bffa1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project a:hover {
+    color: #132744;
+}
+
+.project.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project ul.icons {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.project ul.icons li {
+    margin-right: 10px;
+}
+
+.project ul.icons li:last-child {
+    margin-right: 0;
+}
+
+
 
 @media screen and (max-width: 600px) {
 .container {
