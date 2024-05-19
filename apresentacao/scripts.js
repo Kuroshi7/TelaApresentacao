@@ -25,6 +25,8 @@ function toggleInfo() {
     infoDiv.style.display = infoDiv.style.display === 'none' ? 'block' : 'none';
 }
 
+
+
 function fadeInProjects() {
     var projects = document.querySelectorAll('.project');
     var windowHeight = window.innerHeight;
@@ -46,3 +48,19 @@ window.addEventListener('load', function() {
 });
 
 window.addEventListener('scroll', fadeInProjects);
+
+window.onscroll = function() {
+    const backToTopButton = document.getElementById('backToTop');
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backToTopButton.style.display = "block";
+    } else {
+        backToTopButton.style.display = "none";
+    }
+}
+
+document.getElementById('backToTop').addEventListener('click', function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});

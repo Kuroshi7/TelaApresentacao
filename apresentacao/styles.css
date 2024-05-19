@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-image: linear-gradient(to bottom, #466e77, #8bc29c);
-    background-size: 300vw 300vh;
+    background-size: 400vw 400vh;
     word-wrap: break-word;
 }
 
@@ -141,8 +141,8 @@ button:hover {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
+    transform: translateY(90px);
+    transition: opacity 1s ease-out, transform 0.5s ease-out;
 }
 
 .project h3 {
@@ -179,6 +179,24 @@ button:hover {
 
 .project ul.icons li:last-child {
     margin-right: 0;
+}
+
+.backToTop {
+    display: none;
+    position:fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.backToTop:hover {
+    background-color: #333;
 }
 
 
