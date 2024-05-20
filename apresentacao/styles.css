@@ -221,38 +221,63 @@ button:hover {
 
 
 @media screen and (max-width: 600px) {
-.container {
-    max-width: 90vw;
-    padding: 1rem;
-    border-radius: 2rem;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
-}
+    body {
+        background-size: 600vw 600vh;
+    }
 
-.user-info img {
-    width: 8rem;
-    height: 8rem;
-}
+    .container {
+        max-width: 90vw;
+        padding: 1rem;
+        border-radius: 2rem;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    }
 
-.buttons button {
-    margin-top: 2rem;
-}
+    .user-info img {
+        width: 8rem;
+        height: 8rem;
+    }
 
-button {
-    padding: 1rem 1.5rem;
-    margin: 0 1rem;
-}
+    .buttons button {
+        margin-top: 2rem;
+    }
 
-button i {
-    font-size: 1.5rem;
-}
+    button {
+        padding: 1rem 1.5rem;
+        margin: 0 1rem;
+    }
 
-.containerE {
-    padding: 0.5rem 1rem;
-    margin: 0.5rem;
-    border-radius: 1rem;
-}
+    button i {
+        font-size: 1.5rem;
+    }
 
-.containerE p {
-    letter-spacing: 0rem;
-}
+    .containerE {
+        padding: 0.5rem 1rem;
+        margin: 0.5rem;
+        border-radius: 1rem;
+    }
+
+    .containerE p {
+        letter-spacing: 0rem;
+    }
+
+    .descricao {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .projects-section {
+        margin: 20px auto;
+        padding: 1rem;
+        max-width: 90vw;
+    }
+
+    .project {
+        margin: 10px 0;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .project ul.icons {
+        font-size: 24px;
+    }
 }
