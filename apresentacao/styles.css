@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-image: linear-gradient(to bottom, #466e77, #8bc29c);
-    background-size: 400vw 400vh;
+    background-size: 100%;
     word-wrap: break-word;
 }
 
@@ -38,6 +38,7 @@ body {
     margin-top: 10px;
 }
 
+
 .user-info img {
     width: 250px;
     height: 250px;
@@ -56,6 +57,7 @@ body {
 
 .buttons button {
     margin-top: 55px;
+    box-shadow: 0 0 10px rgba(3, 3, 3, 0.767);
 }
 
 button {
@@ -67,6 +69,7 @@ button {
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
+    
 }
 
 button i {
@@ -143,6 +146,7 @@ button:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+
 
 
 

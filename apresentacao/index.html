@@ -11,7 +11,8 @@
 <body>
     <div class="container">
         <div class="user-info">
-            <img src="./image/profile.jpg" alt="User Image">
+            <h1>Desenvolvedor Full-Stack</h1>
+            <img src="./image/profile.jpg" alt="Foto do Desenvolvedor Victor Soffi">
             <h2><a href="https://www.instagram.com/victor.soffi/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>victor</h2>
             <div class="containerE" id="info-container"> 
                 <button class="info-button" onclick="toggleInfo()">NOME / E-MAIL<i class="fa fa-arrow-down"></i></button> 
@@ -22,20 +23,36 @@
                 </div>
             </div>
             <div class="descricao">
-                <p>
+                <h3>
                     Estudante de programação, 
-                    possuo maior afinidade em desenvolvimento front-end
-                    em JavaScript.<br> 
-                    Tenho conhecimentos sobre UX/UI e interesses na área de teste de software.<br>
-                    Possuo também um breve contato na parte de desenvolvimento back-end com SpringBoot.<br>
-                    Além disso, sou músico por paixão e hobby, e faço parte de uma banda de metalcore autoral.
-                </p>
+                    Experiencia com desenvolvimento Front e Back-end.<br> 
+                    conhecimentos sobre UX/UI.<br>
+                </br>
+                    Linguagens:<br>
+                    <br>
+                    *JavaScript*<br>
+                    *TypeScript*<br>
+                    *React*<br>
+                    *Python*<br>
+                    *Django*<br>
+                    *Node.js*<br>
+                    *C#<br>
+                    <br>
+                    Tecnologias:<br>
+                </br>
+                    *Postman*<br>
+                    *MongoDB*<br>
+                    *FireBase*<br>
+                    *MySQL*<br>
+                    *PostgreSQL*<br>
+
+                </h3>
             </div>
             
         </div>
         <div class="buttons">
-            <button onclick="redirecionargit()"><i class="fab fa-github"></i></button>
-            <button onclick="redirecionarlin()"><i class="fab fa-linkedin"></i></button>
+            <button onclick="redirecionargit()" aria-label="GitHub"><i class="fab fa-github"></i></button>
+            <button onclick="redirecionarlin()" aria-label="GitHub"><i class="fab fa-linkedin"></i></button>
             <br>
             <button onclick="gerarNumeroSorte()">Numero da sorte</button>
             <p id="numeroSorte"></p>
@@ -47,29 +64,34 @@
         <h2>Meus Projetos</h2>
         </div>
         <div class="project" id="project1">
-            <h3>Bateria WEB</h3>
+            <h3>Liista de Tarefas</h3>
             <p>
                 <h4>Descrição:</h4>
-                <h4>--FINALIZADO--</h4>
-                A Bateria WEB é um projeto de uma bateria virtual desenvolvida com HTML, CSS e JavaScript.
-                A página simula uma bateria real, onde cada tecla do teclado ou clique na tela reproduz um som de bateria correspondente.
-                É uma aplicação interativa para explorar sons de bateria de forma virtual.
+                <h4>--WORK IN PROGRESS--</h4>
+                Uma pagina web em React + Vite de Gerenciamento de tarefas, podendo organizar as tarefas do dia, futuras implementaçoes
+                de uma pagina de relatorios das tarefas.
+                <br>
+                <a href="https://todo-list-lyart-omega.vercel.app" target="_blank">Sistema hospedado WEB</a>
                 <br><br>
                 <h4>Recursos:</h4>
                 <ul>
-                    <li>Interface interativa com imagens representativas de cada parte da bateria.</li>
-                    <li>Reprodução de sons ao clicar nos elementos da interface ou ao pressionar teclas específicas no teclado.</li>
-                    
+                    <li>Sistemas de listagem persistente com localSotrage.</li>
+                    <li>Sistema de filtragem de tarefas por ordem e estado de conclusão.</li>
+                    <li>Listagem de tarefas por categoria</li>
+                    <li>Descrição de tarefa</li>
+                    <li>Adição ou remoção de tarefas</li>
                 </ul>
                 <h4>Tecnologias utilizadas:</h4>
                 <ul class="icons">
                     <li><i class="fab fa-html5"></i></li>
                     <li><i class="fab fa-css3-alt"></i></li>
                     <li><i class="fab fa-js"></i></li>
+                    <li><i class="fab fa-react"></i></li>
                 </ul>
             </p>
-            <a href="https://github.com/Kuroshi7/Drums" target="_blank">Veja no GitHub</a>
+            <a href="https://github.com/Kuroshi7/TodoList/tree/master" target="_blank">Veja no GitHub</a>
         </div>
+        
         <div class="project" id="project2">
             <h3>Blog de Tatuagem</h3>
             <p>
@@ -154,6 +176,31 @@
             </p>
             <a href="https://github.com/Kuroshi7/bandapp" target="_blank">Veja no GitHub</a>
         </div>
+        <div class="project" id="project1">
+            <h3>Bateria WEB</h3>
+            <p>
+                <h4>Descrição:</h4>
+                <h4>--FINALIZADO--</h4>
+                A Bateria WEB é um projeto de uma bateria virtual desenvolvida com HTML, CSS e JavaScript.
+                A página simula uma bateria real, onde cada tecla do teclado ou clique na tela reproduz um som de bateria correspondente.
+                É uma aplicação interativa para explorar sons de bateria de forma virtual.
+                <br><br>
+                <h4>Recursos:</h4>
+                <ul>
+                    <li>Interface interativa com imagens representativas de cada parte da bateria.</li>
+                    <li>Reprodução de sons ao clicar nos elementos da interface ou ao pressionar teclas específicas no teclado.</li>
+                    
+                </ul>
+                <h4>Tecnologias utilizadas:</h4>
+                <ul class="icons">
+                    <li><i class="fab fa-html5"></i></li>
+                    <li><i class="fab fa-css3-alt"></i></li>
+                    <li><i class="fab fa-js"></i></li>
+                </ul>
+            </p>
+            <a href="https://github.com/Kuroshi7/Drums" target="_blank">Veja no GitHub</a>
+        </div>
+
     </div>
     <button id="backToTop" title="Voltar ao topo"><i class="fas fa-arrow-up"></i></button>
     <script src="scripts.js"></script>
